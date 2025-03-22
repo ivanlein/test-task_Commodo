@@ -1,115 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Тестовое задание</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <h1>
-            Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola.
-            Anim minim fatback veniam, ground round culpa cupim. Ad short
-            ribs turkey pork chop pariatur
-        </h1>
-        <h2>
-            Ipsum do shankle sed. Sausage tail chicken drumstick ham hock
-            ut, short loin ad ut biltong occaecat pork irure magna.
-        </h2>
-        <p>
-            Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola.
-            Anim minim fatback veniam, ground round culpa cupim. Ad short
-            ribs turkey pork chop pariatur, pork loin flank venison jowl
-            laborum cupidatat magna frankfurter ball tip. Veniam deserunt
-            aute jerky shankle swine consectetur tempor labore quis chislic
-            prosciutto. Buffalo pork loin pancetta swine short ribs filet
-            mignon, anim jerky quis excepteur est aliqua cupidatat. Ground
-            round corned beef dolore porchetta prosciutto leberkas minim ex
-            ball tip velit sed meatball swine ribeye. Consectetur meatloaf
-            ea, ut cow drumstick burgdoggen cupidatat labore spare ribs ball
-            tip tenderloin do filet mignon.
-        </p>
-        <p>
-            Ipsum do shankle sed. Sausage tail chicken drumstick ham hock
-            ut, short loin ad ut biltong occaecat pork irure magna. Nulla
-            pancetta ex ham turducken, aute tenderloin magna spare ribs
-            chislic quis ut ham hock est. Dolore qui pariatur, aliqua nisi
-            officia mollit aute eiusmod excepteur.
-        </p>
-        <p>
-            Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola.
-            Anim minim fatback veniam, ground round culpa cupim. Ad short
-            ribs turkey pork chop pariatur, pork loin flank venison jowl
-            laborum cupidatat magna frankfurter ball tip. Veniam deserunt
-            aute jerky shankle swine consectetur tempor labore quis chislic
-            prosciutto. Buffalo pork loin pancetta swine short ribs filet
-            mignon, anim jerky quis excepteur est aliqua cupidatat. Ground
-            round corned beef dolore porchetta prosciutto leberkas minim ex
-            ball tip velit sed meatball swine ribeye. Consectetur meatloaf
-            ea, ut cow drumstick burgdoggen cupidatat labore spare ribs ball
-            tip tenderloin do filet mignon.
-        </p>
-        <p>
-            Ipsum do shankle sed. Sausage tail chicken drumstick ham hock
-            ut, short loin ad ut biltong occaecat pork irure magna. Nulla
-            pancetta ex ham turducken, aute tenderloin magna spare ribs
-            chislic quis ut ham hock est. Dolore qui pariatur, aliqua nisi
-            officia mollit aute eiusmod excepteur.
-        </p>
-        <p>
-            Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola.
-            Anim minim fatback veniam, ground round culpa cupim. Ad short
-            ribs turkey pork chop pariatur, pork loin flank venison jowl
-            laborum cupidatat magna frankfurter ball tip. Veniam deserunt
-            aute jerky shankle swine consectetur tempor labore quis chislic
-            prosciutto. Buffalo pork loin pancetta swine short ribs filet
-            mignon, anim jerky quis excepteur est aliqua cupidatat. Ground
-            round corned beef dolore porchetta prosciutto leberkas minim ex
-            ball tip velit sed meatball swine ribeye. Consectetur meatloaf
-            ea, ut cow drumstick burgdoggen cupidatat labore spare ribs ball
-            tip tenderloin do filet mignon.
-        </p>
-        <p>
-            Ipsum do shankle sed. Sausage tail chicken drumstick ham hock
-            ut, short loin ad ut biltong occaecat pork irure magna. Nulla
-            pancetta ex ham turducken, aute tenderloin magna spare ribs
-            chislic quis ut ham hock est. Dolore qui pariatur, aliqua nisi
-            officia mollit aute eiusmod excepteur.
-        </p>
-        <p>
-            Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola.
-            Anim minim fatback veniam, ground round culpa cupim. Ad short
-            ribs turkey pork chop pariatur, pork loin flank venison jowl
-            laborum cupidatat magna frankfurter ball tip. Veniam deserunt
-            aute jerky shankle swine consectetur tempor labore quis chislic
-            prosciutto. Buffalo pork loin pancetta swine short ribs filet
-            mignon, anim jerky quis excepteur est aliqua cupidatat. Ground
-            round corned beef dolore porchetta prosciutto leberkas minim ex
-            ball tip velit sed meatball swine ribeye. Consectetur meatloaf
-            ea, ut cow drumstick burgdoggen cupidatat labore spare ribs ball
-            tip tenderloin do filet mignon.
-        </p>
-        <p>
-            Ipsum do shankle sed. Sausage tail chicken drumstick ham hock
-            ut, short loin ad ut biltong occaecat pork irure magna. Nulla
-            pancetta ex ham turducken, aute tenderloin magna spare ribs
-            chislic quis ut ham hock est. Dolore qui pariatur, aliqua nisi
-            officia mollit aute eiusmod excepteur.
-        </p>
-        <form id="contactForm" action="post.php" method="POST">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" required>
-        
-            <input type="submit" value="Отправить">
-            <button type="button" id="resetForm">Сбросить форму</button>
-        </form>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.svg" alt="Логотип" />
+      </div>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Поиск..." />
+        <button id="searchButton">Найти</button>
+      </div>
+    </header>
+    <nav class="dropdown">
+      <button class="dropdown-toggle">Меню</button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="container" id="content">
+      <h1>
+        Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola. Anim
+        minim fatback veniam, ground round culpa cupim. Ad short ribs turkey
+        pork chop pariatur
+      </h1>
+      <h2>
+        Ipsum do shankle sed. Sausage tail chicken drumstick ham hock ut, short
+        loin ad ut biltong occaecat pork irure magna.
+      </h2>
+      <p>
+        Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola. Anim
+        minim fatback veniam, ground round culpa cupim. Ad short ribs turkey
+        pork chop pariatur, pork loin flank venison jowl laborum cupidatat magna
+        frankfurter ball tip. Veniam deserunt aute jerky shankle swine
+        consectetur tempor labore quis chislic prosciutto. Buffalo pork loin
+        pancetta swine short ribs filet mignon, anim jerky quis excepteur est
+        aliqua cupidatat. Ground round corned beef dolore porchetta prosciutto
+        leberkas minim ex ball tip velit sed meatball swine ribeye. Consectetur
+        meatloaf ea, ut cow drumstick burgdoggen cupidatat labore spare ribs
+        ball tip tenderloin do filet mignon.
+      </p>
+      <p>
+        Ipsum do shankle sed. Sausage tail chicken drumstick ham hock ut, short
+        loin ad ut biltong occaecat pork irure magna. Nulla pancetta ex ham
+        turducken, aute tenderloin magna spare ribs chislic quis ut ham hock
+        est. Dolore qui pariatur, aliqua nisi officia mollit aute eiusmod
+        excepteur.
+      </p>
+      <p>
+        Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola. Anim
+        minim fatback veniam, ground round culpa cupim. Ad short ribs turkey
+        pork chop pariatur, pork loin flank venison jowl laborum cupidatat magna
+        frankfurter ball tip. Veniam deserunt aute jerky shankle swine
+        consectetur tempor labore quis chislic prosciutto. Buffalo pork loin
+        pancetta swine short ribs filet mignon, anim jerky quis excepteur est
+        aliqua cupidatat. Ground round corned beef dolore porchetta prosciutto
+        leberkas minim ex ball tip velit sed meatball swine ribeye. Consectetur
+        meatloaf ea, ut cow drumstick burgdoggen cupidatat labore spare ribs
+        ball tip tenderloin do filet mignon.
+      </p>
+      <p>
+        Ipsum do shankle sed. Sausage tail chicken drumstick ham hock ut, short
+        loin ad ut biltong occaecat pork irure magna. Nulla pancetta ex ham
+        turducken, aute tenderloin magna spare ribs chislic quis ut ham hock
+        est. Dolore qui pariatur, aliqua nisi officia mollit aute eiusmod
+        excepteur.
+      </p>
+      <p>
+        Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola. Anim
+        minim fatback veniam, ground round culpa cupim. Ad short ribs turkey
+        pork chop pariatur, pork loin flank venison jowl laborum cupidatat magna
+        frankfurter ball tip. Veniam deserunt aute jerky shankle swine
+        consectetur tempor labore quis chislic prosciutto. Buffalo pork loin
+        pancetta swine short ribs filet mignon, anim jerky quis excepteur est
+        aliqua cupidatat. Ground round corned beef dolore porchetta prosciutto
+        leberkas minim ex ball tip velit sed meatball swine ribeye. Consectetur
+        meatloaf ea, ut cow drumstick burgdoggen cupidatat labore spare ribs
+        ball tip tenderloin do filet mignon.
+      </p>
+      <p>
+        Ipsum do shankle sed. Sausage tail chicken drumstick ham hock ut, short
+        loin ad ut biltong occaecat pork irure magna. Nulla pancetta ex ham
+        turducken, aute tenderloin magna spare ribs chislic quis ut ham hock
+        est. Dolore qui pariatur, aliqua nisi officia mollit aute eiusmod
+        excepteur.
+      </p>
+      <p>
+        Commodo prosciutto kevin, tri-tip sed cillum excepteur bresaola. Anim
+        minim fatback veniam, ground round culpa cupim. Ad short ribs turkey
+        pork chop pariatur, pork loin flank venison jowl laborum cupidatat magna
+        frankfurter ball tip. Veniam deserunt aute jerky shankle swine
+        consectetur tempor labore quis chislic prosciutto. Buffalo pork loin
+        pancetta swine short ribs filet mignon, anim jerky quis excepteur est
+        aliqua cupidatat. Ground round corned beef dolore porchetta prosciutto
+        leberkas minim ex ball tip velit sed meatball swine ribeye. Consectetur
+        meatloaf ea, ut cow drumstick burgdoggen cupidatat labore spare ribs
+        ball tip tenderloin do filet mignon.
+      </p>
+      <p>
+        Ipsum do shankle sed. Sausage tail chicken drumstick ham hock ut, short
+        loin ad ut biltong occaecat pork irure magna. Nulla pancetta ex ham
+        turducken, aute tenderloin magna spare ribs chislic quis ut ham hock
+        est. Dolore qui pariatur, aliqua nisi officia mollit aute eiusmod
+        excepteur.
+      </p>
+      <form id="contactForm" action="post.php" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <input type="submit" value="Отправить" />
+        <button type="button" id="resetForm">Сбросить форму</button>
+      </form>
     </div>
+    <footer>
+      <p>&copy; 2023 Test Task Commodo. Все права защищены.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

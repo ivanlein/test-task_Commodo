@@ -1,118 +1,276 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.dropdown-toggle {
+  margin-top: -40px;
+  margin-left: 20px;
+  position: absolute;
+  min-width: 84px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin-top: 23px;
+  margin-left: 20px;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  min-width: 220px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search button {
+  min-width: 84px;
+  height: 43px;
+  padding: 5px 10px;
+  margin-left: 7px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: yellow;
 }
 
 .container {
-    max-width: 1000px;
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #000;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #000;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #444;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #444;
 }
 
 h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #666;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #666;
 }
 
 p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 label {
-    font-size: 1em;
-    color: #333;
+  font-size: 1em;
+  color: #333;
 }
 
-input[type="text"], input[type="tel"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-    box-sizing: border-box;
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
 }
 
 input[type="submit"]:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h2 {
+    font-size: 1.5em;
+  }
 
-    h3 {
-        font-size: 1.3em;
-    }
+  h3 {
+    font-size: 1.3em;
+  }
 
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
 
-    input[type="text"], input[type="tel"] {
-        padding: 14px;
-        font-size: 1.1em;
-    }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 14px;
+    font-size: 1.1em;
+  }
 
-    input[type="submit"] {
-        padding: 14px 20px;
-        font-size: 1.1em;
-    }
+  input[type="submit"] {
+    padding: 14px 20px;
+    font-size: 1.1em;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  header .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
+  .dropdown-toggle {
+    max-width: 84px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .search {
+    display: inline-flex;
+  }
+
+  .search button {
+    height: 49px;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
 }
