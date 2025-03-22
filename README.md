@@ -1,14 +1,13 @@
 # test-task_Commodo
  Stack: HTML, CSS, JS, PHP
 
+# upd
 
-![image](https://github.com/user-attachments/assets/2ccefff5-13ca-4386-8ac1-5edcb929e56e)
-
-
-![image](https://github.com/user-attachments/assets/1f822d0c-7dce-4ac3-9516-86eee792b10b)
+ visual&func added:
 
 
-![image](https://github.com/user-attachments/assets/438a97a5-a2f3-40cc-86b2-399f960dd9c9)
+![image](https://github.com/user-attachments/assets/7aa8b427-069c-46ee-9f1a-b75b2dd15d2f)
 
 
-![image](https://github.com/user-attachments/assets/d486647d-9cd0-402c-a5ac-c8e9ab232965)
+![image](https://github.com/user-attachments/assets/baf45b11-3a36-4543-aaad-54a99f984410)
+ 
